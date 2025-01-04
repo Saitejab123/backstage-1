@@ -46,6 +46,10 @@ export const instanceMetadataServiceRef = createServiceRef<
   id: 'core.instanceMetadata',
 });
 
+/**
+ * EXPERIMENTAL: System metadata service.
+ * @alpha
+ */
 export const systemMetadataServiceRef = createServiceRef<
   import('./services/definitions/SystemMetadataService').SystemMetadataService
 >({
@@ -60,4 +64,5 @@ export type {
 export type {
   BackstageInstance,
   SystemMetadataService,
+  Target,
 } from './services/definitions/SystemMetadataService';
