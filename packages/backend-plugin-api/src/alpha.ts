@@ -66,5 +66,4 @@ export type {
 export type {
   BackstageInstance,
   SystemMetadataService,
-  Target,
 } from './services/definitions/SystemMetadataService';

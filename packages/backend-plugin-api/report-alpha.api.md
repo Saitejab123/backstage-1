@@ -21,7 +21,9 @@ export type BackendFeatureMeta =
 // @alpha (undocumented)
 export interface BackstageInstance {
   // (undocumented)
-  url: Target;
+  externalUrl: string;
+  // (undocumented)
+  internalUrl: string;
 }
 
 // @alpha (undocumented)
@@ -48,7 +50,7 @@ export interface InstanceMetadataService {
 // @alpha
 export const instanceMetadataServiceRef: ServiceRef<
   InstanceMetadataService,
-  'plugin',
+  'root',
   'singleton'
 >;
 
@@ -61,17 +63,9 @@ export interface SystemMetadataService {
 // @alpha
 export const systemMetadataServiceRef: ServiceRef<
   SystemMetadataService,
-  'plugin',
+  'root',
   'singleton'
 >;
-
-// @alpha (undocumented)
-export type Target =
-  | string
-  | {
-      internal: string;
-      external: string;
-    };
 
 // (No @packageDocumentation comment for this package)
 ```
