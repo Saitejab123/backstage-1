@@ -44,6 +44,7 @@ export const instanceMetadataServiceRef = createServiceRef<
   import('./services/definitions/InstanceMetadataService').InstanceMetadataService
 >({
   id: 'core.instanceMetadata',
+  scope: 'root',
 });
 
 /**
@@ -54,6 +55,7 @@ export const systemMetadataServiceRef = createServiceRef<
   import('./services/definitions/SystemMetadataService').SystemMetadataService
 >({
   id: 'core.systemMetadata',
+  scope: 'root',
 });
 
 export type {
