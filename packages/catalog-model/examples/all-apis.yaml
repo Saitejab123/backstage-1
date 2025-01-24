@@ -7,3 +7,4 @@ spec:
   targets:
     - ./apis/spotify-api.yaml
     - ./apis/streetlights-api.yaml
+    
