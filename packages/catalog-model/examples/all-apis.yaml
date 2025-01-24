@@ -20,6 +20,8 @@ metadata:
   name: example-apis
   description: A collection of all Backstage example APIs
 spec:
+  apiConsumedBy:
+    - backstage-demo
   targets:
     - ./apis/spotify-api.yaml
     - ./apis/streetlights-api.yaml
